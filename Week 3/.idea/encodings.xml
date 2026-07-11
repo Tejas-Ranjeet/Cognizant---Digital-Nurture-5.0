@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Exercise 01 - spring-learn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise 02 - Hands-on-4 - Spring Core - Load Country from Spring Configuration XML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise 02 - Hands-on-4 - Spring Core - Load Country from Spring Configuration XML/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise 03 - Hello World RESTful Web Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise 04 - REST - Country Web Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise 05 - REST - Get country based on country code/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise 06 - Create authentication service that returns JWT/src/main/java" charset="UTF-8" />
+  </component>
+</project>
