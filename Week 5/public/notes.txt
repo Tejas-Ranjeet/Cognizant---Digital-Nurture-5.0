@@ -1,0 +1,78 @@
+# Student Course Portal - Project Structure Notes
+# Hands-On 1: Environment Setup, Project Structure & First Component
+# =================================================================
+
+## Project Files Explained (React/Vite equivalent to Angular concepts)
+
+1. vite.config.ts
+   Purpose: Build tool configuration file (equivalent to angular.json) - defines dev server settings, build options, and plugins.
+
+2. tsconfig.json
+   Purpose: TypeScript compiler configuration - specifies compiler options, module resolution, and strict type-checking rules.
+
+3. package.json
+   Purpose: Project manifest file - lists dependencies, devDependencies, npm scripts (dev, build, preview), and project metadata.
+
+4. src/main.tsx
+   Purpose: Application entry point (equivalent to Angular's main.ts) - bootstraps the React app and renders the root component to the DOM.
+
+5. src/App.tsx
+   Purpose: Root application component (equivalent to app.component.ts) - the main component that contains the app layout and router.
+
+6. index.html
+   Purpose: HTML template file - the single HTML page that hosts the SPA; contains the <div id="root"> mount point for React.
+
+7. src/index.css
+   Purpose: Global stylesheet - contains Tailwind CSS directives and global styles applied across the entire application.
+
+8. tailwind.config.js (if present)
+   Purpose: Tailwind CSS configuration - customizes theme, colors, fonts, and extends utility classes.
+
+## Build Output (dist/ folder)
+
+After running `npm run build`, the dist/ folder contains:
+- index.html: The production HTML file with hashed asset references
+- assets/*.js: Compiled and bundled JavaScript application code
+- assets/*.css: Compiled CSS styles
+
+The main bundled JS file contains all compiled application code including components, routing logic, and dependencies.
+
+## Component Structure
+
+Each component follows a consistent pattern:
+- Functional component with TypeScript
+- Props interface for type safety
+- JSX template for rendering
+- Tailwind CSS classes for styling
+- Export for module usage
+
+## Folder Organization
+
+src/
+├── components/       # Reusable UI components (Header, etc.)
+├── pages/           # Page-level components (Home, CourseList, StudentProfile)
+├── utils/           # Utility functions and helpers
+├── App.tsx          # Root component with routing
+├── main.tsx         # Entry point
+└── index.css        # Global styles
+
+## Key Concepts Demonstrated
+
+1. Component Creation: Creating functional components with TypeScript
+2. Component Organization: Separating components into logical folders
+3. Routing Setup: React Router for SPA navigation
+4. Property Binding: Passing data via props and displaying dynamic values
+5. Template Structure: JSX for component templates
+
+## Budget Configuration (Production Build)
+
+In vite.config.ts, you can configure build options similar to Angular's budgets:
+- Build size warnings
+- Chunk size limits
+- Asset optimization
+
+The production build is optimized with:
+- Code splitting
+- Tree shaking
+- Minification
+- Asset hashing for cache busting
